@@ -6,23 +6,23 @@ branding:
   color: blue
 inputs:
   source_repo_url:
-    description: source gitHub repo url
+    description: source repo url
     required: true
   source_branch:
-    description: branch name to sync from
+    description: source repo branch
     required: true
   destination_repo_url:
     description: destination repo url
     required: true
   destination_branch:
-    description: branch name to sync to
+    description: destination repo branch
     required: true
   ssh_private_key:
-    description: SSH key used to authenticate with git clone urls provided (optional if public or https clone url with authentication)
-    required: false
+    description: SSH_KEY
+    required: true
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: docker
+  image: src/Dockerfile
   env:
     SSH_PRIVATE_KEY: ${{ inputs.ssh_private_key }}
   args:

@@ -1,7 +1,7 @@
 FROM alpine
 
-LABEL "repository"="http://github.com/yehan-coding/yehan-git-sync"
-LABEL "homepage"="http://github.com/yehan-coding/yehan-git-sync"
+LABEL "repository"="https://github.com/yehan68/yehan-git-sync"
+LABEL "homepage"="https://github.com/marketplace/actions/yehan-git-sync-action"
 LABEL "maintainer"="Ye Han <zhangtong.mr@aliyun.com>"
 
 RUN apk add --no-cache git openssh-client && \

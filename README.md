@@ -1,5 +1,5 @@
 <div align=center>
-<img src="http://qiniu.zhangtong.work/dev/avatar.jpg" width = "100" height = "100" style="border-radius: 50%;" div align=center />
+<img src="https://avatars.githubusercontent.com/u/40497166?s=100" width = "100" height = "100" style="border-radius: 50%;" div align=center />
 </div>
 <p align="center">
   <a href="https://github.com/yehan-coding/yehan-git-sync">
