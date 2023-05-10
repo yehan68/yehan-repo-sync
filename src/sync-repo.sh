@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # 检查参数
-if [ -z "$1" ] || [ -z "$2" ]; then
+if [ -z "$1" ] || [ -z "$2" ]
   echo "Usage: $0 source_repo_url target_repo_url"
   exit 1
 fi
