@@ -10,11 +10,16 @@ mkdir /root/.ssh
 echo "$SSH_PRIVATE_KEY" > /root/.ssh/id_rsa
 chmod 600 /root/.ssh/id_rsa
 pwd
-ls /github/home
-ls /github/workflow
-ls /github/file_commands
-ls /github/workspace
-ls ~
+echo "/github/home"
+ll /github/home
+echo "/github/workflow"
+ll /github/workflow
+echo "/github/file_commands"
+ll /github/file_commands
+echo "/github/workspace"
+ll /github/workspace
+echo "~"
+ll ~
 chmod +x ./syno-repo.sh
 
 sh -c "./syno-repo.sh $*"
