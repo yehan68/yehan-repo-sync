@@ -14,6 +14,7 @@ ls /github/home
 ls /github/workflow
 ls /github/file_commands
 ls /github/workspace
+ls ~
 chmod +x ./syno-repo.sh
 
 sh -c "./syno-repo.sh $*"
