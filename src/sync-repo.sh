@@ -13,7 +13,7 @@ DESTINATION_REPO_URL="$2"
 function clone_repo() {
   local repo_url="$1"
   local dir="$2"
-  if [ -d "$dir" ]; then
+  if [ -d "$dir" ]
     echo "Directory $dir already exists, skipping cloning."
     return
   fi
