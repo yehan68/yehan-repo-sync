@@ -1,4 +1,4 @@
-name: Yehan Git Sync Action
+name: Yehan Repo Sync Action
 author: Ye Han <zhangtong.mr@aliyun.com>
 description: Sync current repo to specified repo
 branding:
@@ -8,14 +8,8 @@ inputs:
   source_repo_url:
     description: source repo url
     required: true
-  source_branch:
-    description: source repo branch
-    required: true
   destination_repo_url:
     description: destination repo url
-    required: true
-  destination_branch:
-    description: destination repo branch
     required: true
   ssh_private_key:
     description: SSH_KEY
@@ -27,6 +21,4 @@ runs:
     SSH_PRIVATE_KEY: ${{ inputs.ssh_private_key }}
   args:
     - ${{ inputs.source_repo_url }}
-    - ${{ inputs.source_branch }}
     - ${{ inputs.destination_repo_url }}
-    - ${{ inputs.destination_branch }}
