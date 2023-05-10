@@ -9,6 +9,7 @@ fi
 mkdir /root/.ssh
 echo "$SSH_PRIVATE_KEY" > /root/.ssh/id_rsa
 chmod 600 /root/.ssh/id_rsa
-chmod +x /syno-repo.sh
+chmod +x /src/syno-repo.sh
+ls -a
 
-sh -c "/syno-repo.sh $*"
+sh -c "/src/syno-repo.sh $*"
