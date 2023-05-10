@@ -2,7 +2,7 @@
 
 set -e
 
-if [ -z "$SSH_PRIVATE_KEY" ]
+if [ -z "$SSH_PRIVATE_KEY" ]; then
   echo "ERROR: SSH_PRIVATE_KEY not set. Exiting..."
   exit 1
 fi

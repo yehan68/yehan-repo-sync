@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # 检查参数
-if [ -z "$1" ] || [ -z "$2" ]
+if [ -z "$1" ] || [ -z "$2" ]; then
   echo "Usage: $0 source_repo_url target_repo_url"
   exit 1
 fi
@@ -13,7 +13,7 @@ DESTINATION_REPO_URL="$2"
 function clone_repo() {
   local repo_url="$1"
   local dir="$2"
-  if [ -d "$dir" ]
+  if [ -d "$dir" ]; then
     echo "Directory $dir already exists, skipping cloning."
     return
   fi
